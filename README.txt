@@ -1,7 +1,7 @@
 # MPI-tutorial-for-beginner
 A Sample program to show how MPI works.
 
-========================================================HOW TO========================================================
+===========================HOW TO===========================
   1.Download the High performance computing(HPC) SDK pack
       https://msdn.microsoft.com/en-us/library/cc853440(v=vs.85).aspx
   2.Install the HPC SDK 
