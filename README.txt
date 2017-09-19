@@ -46,22 +46,28 @@ A Sample program to show how MPI works.
   17.change the following
     *)Configuration Properties->Linker->System
         select the SubSystem as Console (/SUBSYSTEM:CONSOLE)
+        ***************NOTE***************     
+                    Refer change1.png
+        **********************************
     *)Configuration Properties->Linker->General
         select the Additional Library Directories as <path>
               <path> where you have installed HPC SDK pack->Lib->i386  
               ***************NOTE***************     
                     Usually in C:\Program Files\Microsoft HPC Pack 2008 SDK\Lib\i386
-              ***************NOTE***************
+                    Refer change4.png
+              **********************************
     *)Configuration Properties->Linker->Input
          select the Additional Dependencies as msmpi.lib
               ***************NOTE***************     
                     If lot of stuff are already in that area,add it to the last with a semi colon
+                    Refer change2.png
               **********************************
      *)Configuration Properties->C/C++->General
          select the Additional Include Directories as <path>
                 <path> where you have installed HPC SDK pack->Include  
               ***************NOTE***************     
                     Usually in C:\Program Files\Microsoft HPC Pack 2008 SDK\Include
+                    Refer change3.png
               **********************************
   18.Type your mpi code,right click on project name in Solution Explorer and then Click Build
   19.To run the mpi code,do the following
@@ -76,3 +82,6 @@ A Sample program to show how MPI works.
          go to Debug and type the command
                   mpiexec -n <number_of_process> <filename.exe>
          Ouput will be displayed
+         ***************NOTE***************     
+                    Refer output.png
+         **********************************
